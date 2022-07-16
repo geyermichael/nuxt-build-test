@@ -1,42 +1,26 @@
-# Nuxt 3 Minimal Starter
+# Reproduciton nuxt build error
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+Link to [issue](https://github.com/nuxt/framework/issues/5899)
 
-## Setup
+## Error
 
-Make sure to install the dependencies:
+After using `yarn build` those errors occured.
 
-```bash
-# yarn
-yarn install
+```
+ ERROR  Rollup error: Could not load /Users/michael/Coding/temp/test-nuxt/.nuxt/dist/server/server.mjs (imported by node_modules/nuxt/dist/core/runtime/nitro/renderer.mjs): ENOENT: no such file or directory, open '/Users/michael/Coding/temp/test-nuxt/.nuxt/dist/server/server.mjs'
 
-# npm
-npm install
 
-# pnpm
-pnpm install --shamefully-hoist
+ ERROR  Could not load /Users/michael/Coding/temp/test-nuxt/.nuxt/dist/server/server.mjs (imported by node_modules/nuxt/dist/core/runtime/nitro/renderer.mjs): ENOENT: no such file or directory, open '/Users/michael/Coding/temp/test-nuxt/.nuxt/dist/server/server.mjs'
 ```
 
-## Development Server
+# Fix
 
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
+In `components/Site/TheSiteHeader.vue` comment following lines.
+```
+<PhList size="32" />
+```
+```
+<PhX size="32" />
 ```
 
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+After that, build works perfectly.
