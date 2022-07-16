@@ -2,6 +2,8 @@
 
 Link to [issue](https://github.com/nuxt/framework/issues/5899)
 
+Run `yarn install`
+
 ## Error
 
 After using `yarn build` those errors occured.
@@ -13,7 +15,7 @@ After using `yarn build` those errors occured.
  ERROR  Could not load /Users/michael/Coding/temp/test-nuxt/.nuxt/dist/server/server.mjs (imported by node_modules/nuxt/dist/core/runtime/nitro/renderer.mjs): ENOENT: no such file or directory, open '/Users/michael/Coding/temp/test-nuxt/.nuxt/dist/server/server.mjs'
 ```
 
-## Fix
+## Bypass error 
 
 In `components/Site/TheSiteHeader.vue` comment following lines.
 ```
@@ -32,4 +34,4 @@ change to
 <!-- <PhX size="32" /> -->
 ```
 
-After that, build works perfectly.
+After that, `build` works perfectly.
