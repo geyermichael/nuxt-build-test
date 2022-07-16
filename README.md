@@ -19,8 +19,17 @@ In `components/Site/TheSiteHeader.vue` comment following lines.
 ```
 <PhList size="32" />
 ```
+change to
+```
+<!-- <PhList size="32" /> -->
+```
+and
 ```
 <PhX size="32" />
+```
+change to
+```
+<!-- <PhX size="32" /> -->
 ```
 
 After that, build works perfectly.
