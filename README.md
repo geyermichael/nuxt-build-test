@@ -1,4 +1,4 @@
-# Reproduciton nuxt build error
+# Reproduction nuxt build error
 
 Link to [issue](https://github.com/nuxt/framework/issues/5899)
 
