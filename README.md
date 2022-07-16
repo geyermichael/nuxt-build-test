@@ -13,7 +13,7 @@ After using `yarn build` those errors occured.
  ERROR  Could not load /Users/michael/Coding/temp/test-nuxt/.nuxt/dist/server/server.mjs (imported by node_modules/nuxt/dist/core/runtime/nitro/renderer.mjs): ENOENT: no such file or directory, open '/Users/michael/Coding/temp/test-nuxt/.nuxt/dist/server/server.mjs'
 ```
 
-# Fix
+## Fix
 
 In `components/Site/TheSiteHeader.vue` comment following lines.
 ```
